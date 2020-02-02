@@ -1,0 +1,64 @@
+[{
+    "name": "3D Lab",
+    "floor": "1",
+    "information": "This is a room has 3D printers",
+    "photo": "rgthjfs",
+    "beaconMinorVal": "21039",
+    "beaconMajorVal": "21324",
+    "isVisited": false
+  },
+  {
+    "name": "Wood Working",
+    "floor": "1",
+    "information": "This is a room has wood working tools",
+    "photo": "rgthjte",
+    "beaconMinorVal": "21239",
+    "beaconMajorVal": "21624",
+    "isVisited": false
+  },
+  {
+    "name": "Wood Working",
+    "floor": "1",
+    "information": "This is a room has wood working tools",
+    "photo": "rgthjte",
+    "beaconMinorVal": "21239",
+    "beaconMajorVal": "21654",
+    "isVisited": false
+  },
+  {
+    "name": "Wood Working",
+    "floor": "1",
+    "information": "This is a room has wood working tools",
+    "photo": "rgthjte",
+    "beaconMinorVal": "21139",
+    "beaconMajorVal": "21694",
+    "isVisited": false
+  },
+  {
+    "name": "Wood Working",
+    "floor": "1",
+    "information": "This is a room has wood working tools",
+    "photo": "rgthjte",
+    "beaconMinorVal": "21339",
+    "beaconMajorVal": "21124",
+    "isVisited": false
+  },
+  {
+    "name": "Wood Working",
+    "floor": "1",
+    "information": "This is a room has wood working tools",
+    "photo": "rgthjte",
+    "beaconMinorVal": "21289",
+    "beaconMajorVal": "21374",
+    "isVisited": false
+  },
+  {
+    "name": "Wood Working",
+    "floor": "1",
+    "information": "This is a room has wood working tools",
+    "photo": "rgthjte",
+    "beaconMinorVal": "21739",
+    "beaconMajorVal": "21724",
+    "isVisited": false
+  }]
+    
