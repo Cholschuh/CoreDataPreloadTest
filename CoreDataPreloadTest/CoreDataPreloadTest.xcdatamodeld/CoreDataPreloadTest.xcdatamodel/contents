@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="LisitedRooms" representedClassName="LisitedRooms" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-    </entity>
     <entity name="RoomMO" representedClassName="RoomMO" syncable="YES" codeGenerationType="class">
         <attribute name="beaconMajorVal" optional="YES" attributeType="String"/>
         <attribute name="beaconMinorVal" optional="YES" attributeType="String"/>
@@ -13,8 +9,11 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="photo" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="VisitedRoomsMO" representedClassName="VisitedRoomsMO" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="RoomMO" positionX="-358.0625" positionY="59.90234375" width="128" height="148"/>
-        <element name="LisitedRooms" positionX="-63" positionY="36" width="128" height="73"/>
+        <element name="VisitedRoomsMO" positionX="-63" positionY="36" width="128" height="58"/>
     </elements>
 </model>

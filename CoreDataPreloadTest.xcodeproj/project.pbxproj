@@ -18,6 +18,7 @@
 		050F133623E14DA000B32741 /* CoreDataPreloadTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050F133523E14DA000B32741 /* CoreDataPreloadTestUITests.swift */; };
 		050F134423E14E2000B32741 /* room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050F134323E14E2000B32741 /* room.swift */; };
 		050F134923E1652400B32741 /* 1819RoomData.json in Resources */ = {isa = PBXBuildFile; fileRef = 050F134823E1652400B32741 /* 1819RoomData.json */; };
+		051E517F23E6A181004E6B35 /* coreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E517E23E6A181004E6B35 /* coreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		050F133723E14DA000B32741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		050F134323E14E2000B32741 /* room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = room.swift; sourceTree = "<group>"; };
 		050F134823E1652400B32741 /* 1819RoomData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1819RoomData.json; sourceTree = "<group>"; };
+		051E517E23E6A181004E6B35 /* coreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				050F134323E14E2000B32741 /* room.swift */,
+				051E517E23E6A181004E6B35 /* coreDataHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				050F131B23E14D9400B32741 /* CoreDataPreloadTest.xcdatamodeld in Sources */,
 				050F131523E14D9400B32741 /* ViewController.swift in Sources */,
+				051E517F23E6A181004E6B35 /* coreDataHelper.swift in Sources */,
 				050F131123E14D9400B32741 /* AppDelegate.swift in Sources */,
 				050F131323E14D9400B32741 /* SceneDelegate.swift in Sources */,
 				050F134423E14E2000B32741 /* room.swift in Sources */,

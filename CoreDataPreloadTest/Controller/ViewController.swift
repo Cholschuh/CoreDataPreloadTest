@@ -18,6 +18,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         configureFetchedResultsController()
         tblView.dataSource = self
+        if coreDataHelper.recordVistedLoc(name: "Test"){
+            print("Record Saved")
+        } else{
+            print("error")
+        }
+        
+    }
+    @IBAction func ClearVisited(_ sender: UIButton) {
+        if coreDataHelper.clearAllVistedLoc(){
+            print("Visted Locations Cleared")
+        }else{
+            print("Error")
+        }
     }
     private func configureFetchedResultsController(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -50,7 +63,7 @@ extension ViewController: UITableViewDataSource{
             return 0
         }
         let rowsCount = sections[section].numberOfObjects
-        print(rowsCount)
+        //print(rowsCount)
         return rowsCount
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

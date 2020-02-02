@@ -21,6 +21,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="ClearVisited:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XO8-8d-iSS"/>
                                     <segue destination="cfz-vM-oiq" kind="show" id="FKN-TU-Que"/>
                                 </connections>
                             </button>
