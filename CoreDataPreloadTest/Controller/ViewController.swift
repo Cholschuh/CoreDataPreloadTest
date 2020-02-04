@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import MessageUI
 
 class ViewController: UIViewController {
     
@@ -25,12 +26,76 @@ class ViewController: UIViewController {
         }
         
     }
+    @IBAction func preHeavyBtn(_ sender: UIButton) {
+        //Haptic feedback UIImpact medium
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.prepare()
+        generator.impactOccurred()
+        
+    }
+    @IBAction func preLightBtn(_ sender: UIButton) {
+        //Haptic feedback UIImpact medium
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.prepare()
+        generator.impactOccurred()
+        
+    }
+    @IBAction func preRigidBtn(_ sender: UIButton) {
+        //Haptic feedback UIImpact medium
+        let generator = UIImpactFeedbackGenerator(style: .rigid)
+        generator.prepare()
+        generator.impactOccurred()
+        
+    }
+    @IBAction func composerBtn(_ sender: UIButton) {
+        showMailComposer()
+    }
+    @IBAction func preMediumBtn(_ sender: UIButton) {
+        
+        //Haptic feedback UIImpact medium
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.prepare()
+        generator.impactOccurred()
+        
+        
+    }
+    @IBAction func nSuccessBtn(_ sender: UIButton) {
+        //Haptic feedback Success
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+    }
+    @IBAction func nErrorBtn(_ sender: UIButton) {
+        //Haptic feedback Success
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.error)
+    }
+    @IBAction func nWarningBtn(_ sender: UIButton) {
+        //Haptic feedback Success
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.warning)
+    }
     @IBAction func ClearVisited(_ sender: UIButton) {
         if coreDataHelper.clearAllVistedLoc(){
             print("Visted Locations Cleared")
+            
+            //Haptic feedback Success
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.success)
         }else{
             print("Error")
         }
+    }
+    func showMailComposer(){
+        guard MFMailComposeViewController.canSendMail() else {
+            print("Email is not supported on this device")
+            return
+        }
+        let composer =  MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setToRecipients(["Chris.csrstaff@gmail.com"])
+        composer.setSubject("This is a Email from the app you coded")
+        composer.setMessageBody("It works! See See ", isHTML: false)
+        present(composer, animated: true)
     }
     private func configureFetchedResultsController(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -73,5 +138,28 @@ extension ViewController: UITableViewDataSource{
             
         }
         return cell
+    }
+}
+extension ViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        if let error = error {
+            print(error.localizedDescription)
+            controller.dismiss(animated: true, completion: nil)
+        }
+        
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .failed:
+            print("Failed to send")
+        case .saved:
+            print("Saved")
+            case .sent:
+            print("Sent!")
+        default:
+            print("Not accounted for")
+        }
+        
+        controller.dismiss(animated: true, completion: nil)
     }
 }

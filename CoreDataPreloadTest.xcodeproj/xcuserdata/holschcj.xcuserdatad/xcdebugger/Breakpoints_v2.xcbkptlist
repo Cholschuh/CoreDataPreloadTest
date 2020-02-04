@@ -94,10 +94,10 @@
             filePath = "CoreDataPreloadTest/Controller/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "controllerDidChangeContent(_:)"
-            landmarkType = "7">
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -16,8 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wya-uu-3di">
-                                <rect key="frame" x="135" y="179" width="147" height="45"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="98" y="88" width="218" height="45"/>
+                                <state key="normal" title="Clear visited rooms w/ segue">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -25,12 +25,86 @@
                                     <segue destination="cfz-vM-oiq" kind="show" id="FKN-TU-Que"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-BG-zq2">
-                                <rect key="frame" x="0.0" y="314" width="414" height="582"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90j-tn-fEo">
+                                <rect key="frame" x="189" y="161" width="103" height="30"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="preMediumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7g-2j-Ow7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haptic Feedback UIImpact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oR-Ms-GFg">
+                                <rect key="frame" x="106" y="132" width="202" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIF-cc-MIn">
+                                <rect key="frame" x="38" y="228" width="58" height="30"/>
+                                <state key="normal" title="Success"/>
+                                <connections>
+                                    <action selector="nSuccessBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHb-5P-Kec"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6M-O2-Psw">
+                                <rect key="frame" x="141" y="228" width="57" height="30"/>
+                                <state key="normal" title="Warning"/>
+                                <connections>
+                                    <action selector="nWarningBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lbi-qA-Vhe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-eP-mH1">
+                                <rect key="frame" x="239" y="228" width="155" height="30"/>
+                                <state key="normal" title="Danger, Will Robinson!"/>
+                                <connections>
+                                    <action selector="nErrorBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofD-5a-1eE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haptic Feedback UINotification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWS-lK-Xjh">
+                                <rect key="frame" x="88" y="199" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-SJ-Fe3">
+                                <rect key="frame" x="131" y="161" width="35" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="582" id="pwv-U9-Nge"/>
+                                    <constraint firstAttribute="width" constant="35" id="PT6-TC-PA0"/>
                                 </constraints>
+                                <state key="normal" title="Light"/>
+                                <connections>
+                                    <action selector="preLightBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAX-ap-ebE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMG-Cf-gdF">
+                                <rect key="frame" x="321" y="161" width="43" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="yNB-de-PTO"/>
+                                </constraints>
+                                <state key="normal" title="Heavy"/>
+                                <connections>
+                                    <action selector="preHeavyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Yb-fk-Vbr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIS-Ri-eZC">
+                                <rect key="frame" x="51" y="161" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Bjf-1Z-6Te"/>
+                                </constraints>
+                                <state key="normal" title="Rigid"/>
+                                <connections>
+                                    <action selector="preRigidBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ll0-yN-uZo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZw-8A-8lH">
+                                <rect key="frame" x="315" y="276" width="70" height="30"/>
+                                <state key="normal" title="Email Test"/>
+                                <connections>
+                                    <action selector="composerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ag2-5I-K9j"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-BG-zq2">
+                                <rect key="frame" x="0.0" y="383" width="414" height="513"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="FnW-mH-UbZ">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
@@ -45,13 +119,35 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ucC-BG-zq2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4jt-Jo-6d7"/>
-                            <constraint firstItem="wya-uu-3di" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="RB7-qB-18h"/>
-                            <constraint firstItem="wya-uu-3di" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="YZj-jb-iBl"/>
-                            <constraint firstItem="ucC-BG-zq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="baz-7G-w9W"/>
-                            <constraint firstItem="ucC-BG-zq2" firstAttribute="top" secondItem="wya-uu-3di" secondAttribute="bottom" constant="90" id="dcZ-MR-uEA"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ucC-BG-zq2" secondAttribute="bottom" constant="-34" id="hyk-ll-4fL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wya-uu-3di" secondAttribute="trailing" constant="132" id="wWv-QQ-Kom"/>
+                            <constraint firstItem="90j-tn-fEo" firstAttribute="top" secondItem="wya-uu-3di" secondAttribute="bottom" constant="28" id="0MB-np-C3J"/>
+                            <constraint firstItem="DZw-8A-8lH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="315" id="2cy-Wi-s2W"/>
+                            <constraint firstItem="ucC-BG-zq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2gT-Ht-gI3"/>
+                            <constraint firstItem="90j-tn-fEo" firstAttribute="baseline" secondItem="ZMG-Cf-gdF" secondAttribute="baseline" id="6T5-hu-p6B"/>
+                            <constraint firstItem="1ip-SJ-Fe3" firstAttribute="leading" secondItem="GIS-Ri-eZC" secondAttribute="trailing" constant="45" id="7Ae-23-TEP"/>
+                            <constraint firstItem="90j-tn-fEo" firstAttribute="leading" secondItem="1ip-SJ-Fe3" secondAttribute="trailing" constant="23" id="7yq-gZ-KGP"/>
+                            <constraint firstItem="ucC-BG-zq2" firstAttribute="centerX" secondItem="CWS-lK-Xjh" secondAttribute="centerX" id="8mg-x1-fP9"/>
+                            <constraint firstItem="GIS-Ri-eZC" firstAttribute="baseline" secondItem="1ip-SJ-Fe3" secondAttribute="baseline" id="9py-Ph-AAS"/>
+                            <constraint firstItem="GIS-Ri-eZC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="BRh-aL-fzI"/>
+                            <constraint firstItem="CWS-lK-Xjh" firstAttribute="top" secondItem="1ip-SJ-Fe3" secondAttribute="bottom" constant="8" id="EoH-NK-3ze"/>
+                            <constraint firstItem="DZw-8A-8lH" firstAttribute="top" secondItem="L3q-eP-mH1" secondAttribute="bottom" constant="18" id="LHk-zz-5dc"/>
+                            <constraint firstItem="RIF-cc-MIn" firstAttribute="baseline" secondItem="g6M-O2-Psw" secondAttribute="baseline" id="P2g-e7-ED6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZMG-Cf-gdF" secondAttribute="trailing" constant="50" id="PJR-zT-o4n"/>
+                            <constraint firstItem="1oR-Ms-GFg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="T1K-8P-3yI"/>
+                            <constraint firstItem="RIF-cc-MIn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="Xe7-38-4b6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ucC-BG-zq2" secondAttribute="bottom" constant="-34" id="ZAc-WA-K2s"/>
+                            <constraint firstItem="L3q-eP-mH1" firstAttribute="leading" secondItem="g6M-O2-Psw" secondAttribute="trailing" constant="41" id="cSX-6r-DtZ"/>
+                            <constraint firstItem="ucC-BG-zq2" firstAttribute="top" secondItem="DZw-8A-8lH" secondAttribute="bottom" constant="77" id="dhQ-Rr-Kzx"/>
+                            <constraint firstItem="g6M-O2-Psw" firstAttribute="baseline" secondItem="L3q-eP-mH1" secondAttribute="baseline" id="eJs-25-ioE"/>
+                            <constraint firstItem="1oR-Ms-GFg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="eiz-qw-clH"/>
+                            <constraint firstItem="RIF-cc-MIn" firstAttribute="top" secondItem="CWS-lK-Xjh" secondAttribute="bottom" constant="8" id="gpK-WB-0uL"/>
+                            <constraint firstItem="1oR-Ms-GFg" firstAttribute="centerX" secondItem="CWS-lK-Xjh" secondAttribute="centerX" id="o17-cm-e1J"/>
+                            <constraint firstItem="wya-uu-3di" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="poj-2X-11h"/>
+                            <constraint firstItem="1ip-SJ-Fe3" firstAttribute="baseline" secondItem="90j-tn-fEo" secondAttribute="baseline" id="tba-HI-VXA"/>
+                            <constraint firstItem="L3q-eP-mH1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uzm-rF-YzT"/>
+                            <constraint firstItem="ZMG-Cf-gdF" firstAttribute="leading" secondItem="90j-tn-fEo" secondAttribute="trailing" constant="29" id="vS8-fN-YNX"/>
+                            <constraint firstItem="GIS-Ri-eZC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="y4e-i9-8dz"/>
+                            <constraint firstItem="wya-uu-3di" firstAttribute="centerX" secondItem="1oR-Ms-GFg" secondAttribute="centerX" id="z63-Xw-Gba"/>
+                            <constraint firstItem="wya-uu-3di" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="zwI-Wv-CN0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
